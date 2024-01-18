@@ -1,4 +1,4 @@
-const siteUrlStem = 'https://yamadashy.github.io/tech-blog-rss-feed';
+const siteUrlStem = 'https://it-trio.github.io/it-company-podcast-rss-feed';
 const siteUrl = `${siteUrlStem}/`;
 
 module.exports = {
@@ -13,8 +13,8 @@ module.exports = {
   feedTitle: '企業テックブログRSS',
   feedDescription: '企業のテックブログの更新をまとめたRSSフィード',
   feedLanguage: 'ja',
-  feedCopyright: 'yamadashy/tech-blog-rss-feed',
-  feedGenerator: 'yamadashy/tech-blog-rss-feed',
+  feedCopyright: 'it-trio/it-company-podcast-rss-feed',
+  feedGenerator: 'it-trio/it-company-podcast-rss-feed',
   feedUrls: {
     atom: `${siteUrl}feeds/atom.xml`,
     rss: `${siteUrl}feeds/rss.xml`,
@@ -22,16 +22,16 @@ module.exports = {
   },
 
   // GitHub
-  author: 'yamadashy',
-  gitHubUserUrl: 'https://github.com/yamadashy/',
-  gitHubRepositoryUrl: 'https://github.com/yamadashy/tech-blog-rss-feed/',
+  author: 'Spice-Z',
+  gitHubUserUrl: 'https://github.com/Spice-Z/',
+  gitHubRepositoryUrl: 'https://github.com/it-trio/it-company-podcast-rss-feed/',
 
   // Google Analytics系。フォークして使う際は値を空にするか書き換えてください
-  googleSiteVerification: 'GPLvXv8kYtLMW912ZS54DKFEZL6ruOrjOFLdHVTo37o',
-  globalSiteTagKey: 'G-CNNNTL0NB3',
+  googleSiteVerification: '',
+  globalSiteTagKey: '',
 
   // フィードの取得などに使う UserAgent
-  requestUserAgent: 'facebookexternalhit/1.1; yamadashy/tech-blog-rss-feed',
+  requestUserAgent: 'facebookexternalhit/1.1; it-trio/it-company-podcast-rss-feed',
 
   // サイトの追加方法のリンク
   howToAddSiteLink:

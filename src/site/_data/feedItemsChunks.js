@@ -14,9 +14,9 @@ module.exports = async () => {
 
   let feedItems = feedData.items;
 
-  // 直近1週間分
+  // 直近１ヶ月分
   feedItems = feedItems.filter((feedItem) => {
-    return dayjs(feedItem.date_published) > dayjs().subtract(7, 'd');
+    return dayjs(feedItem.date_published) > dayjs().subtract(1, 'month');
   });
 
   // データ調整

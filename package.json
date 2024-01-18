@@ -1,6 +1,6 @@
 {
-  "name": "tech-blog-rss-feed",
-  "description": "企業のテックブログの更新をまとめたRSSフィードを配信",
+  "name": "it-company-podcast-rss-feed",
+  "description": "IT企業のポッドキャストの更新をまとめたRSSフィードを配信",
   "version": "1.0.0",
   "main": "",
   "scripts": {

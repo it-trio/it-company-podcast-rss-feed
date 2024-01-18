@@ -1,4 +1,4 @@
-const siteUrlStem = 'https://it-trio.github.io/it-company-podcast-rss-feed';
+const siteUrlStem = 'https://it-company-podcast.it-trio-no.com';
 const siteUrl = `${siteUrlStem}/`;
 
 module.exports = {

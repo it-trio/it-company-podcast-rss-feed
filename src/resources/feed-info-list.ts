@@ -38,6 +38,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
     'ウェンズデイ・ホリデイ | WEDNESDAY HOLIDAY - 働くの実験室（仮）By SmartHR',
     'https://anchor.fm/s/9a31c780/podcast/rss',
   ],
+  ['エンジニアストーリー By Qiita', 'https://rss.art19.com/engineerstory'],
   ['カミナシSaaS FM', 'https://anchor.fm/s/5ca4aa04/podcast/rss'],
   ['起業家のキモチ - かけだし起業家応援ラジオ By MIC', 'https://anchor.fm/s/34764470/podcast/rss'],
   ['聴くエンジニアType', 'https://anchor.fm/s/70ab9954/podcast/rss'],

@@ -31,7 +31,7 @@ const imageShortcode = async (src, alt, pathPrefix = '') => {
     metadata = await Image(src, {
       widths: [150, 450],
       formats: ["webp", "jpeg"],
-      outputDir: 'public/images/feed-thumbnails',
+      outputDir: 'dist/images/feed-thumbnails',
       urlPath: `${pathPrefix}images/feed-thumbnails/`,
       cacheOptions: eleventyCacheOption,
       sharpWebpOptions: {
@@ -105,7 +105,7 @@ module.exports = function (eleventyConfig) {
 
     dir: {
       input: 'src/site',
-      output: 'public'
+      output: 'dist'
     }
   }
 }

@@ -10,15 +10,21 @@ on:
   workflow_dispatch:
 
 jobs:
+  
   generate-feed:
     name: Generate Feed
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-22.04
     timeout-minutes: 30
     permissions:
       pull-requests: write
       contents: write
       repository-projects: write
-
+      pages: write
+      id-token: write
+    
     steps:
       - name: Git checkout
         uses: actions/checkout@v4
@@ -52,12 +58,16 @@ jobs:
       - name: Generate site
         run: yarn site-build
 
-      - name: Push to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          # NOTE: 変更履歴が必要な場合は false に変更
-          force_orphan: true
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+      # - name: Push to GitHub Pages
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./public
+      #     # NOTE: 変更履歴が必要な場合は false に変更
+      #     force_orphan: true
+      #     user_name: 'github-actions[bot]'
+      #     user_email: 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3

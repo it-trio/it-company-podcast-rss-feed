@@ -11,11 +11,8 @@ on:
 
 jobs:
   
-  generate-feed:
+  generate-feed-and-build:
     name: Generate Feed
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-22.04
     timeout-minutes: 30
     permissions:
@@ -73,7 +70,18 @@ jobs:
       #     force_orphan: true
       #     user_name: 'github-actions[bot]'
       #     user_email: 'github-actions[bot]@users.noreply.github.com'
-
+    
+  deploy:
+    needs: generate-feed-and-build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    name: Deploy
+    runs-on: ubuntu-22.04
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3

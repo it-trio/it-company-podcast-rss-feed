@@ -58,6 +58,12 @@ jobs:
       - name: Generate site
         run: yarn site-build
 
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist
+
       # - name: Push to GitHub Pages
       #   uses: peaceiris/actions-gh-pages@v3
       #   with:

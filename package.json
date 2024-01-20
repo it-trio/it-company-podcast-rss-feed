@@ -17,18 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/yamadashy/tech-blog--rss-feed.git"
+    "url": "git@github.com:it-trio/it-company-podcast-rss-feed.git"
   },
-  "bugs": {
-    "url": "https://github.com/yamadashy/tech-blog-rss-feed/issues"
-  },
-  "author": "yamadashy",
+  "author": "Spice-Z",
   "license": "MIT",
   "keywords": [
     "blog",
-    "tech blog",
-    "engineer blog",
-    "engineering blog",
+    "it podcast",
+    "company podcast",
     "feed",
     "rss",
     "atom"

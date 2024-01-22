@@ -25,6 +25,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
     'Adobe Experience Cloud ポッドキャスト',
     'https://www.omnycontent.com/d/playlist/12259a7b-698b-45f2-ba99-aae300e94d94/a9cb6c83-27c7-4f8f-b39e-acd900417d4f/4b904b0f-d432-4a90-be00-acd90044b764/podcast.rss',
   ],
+  ['Backyard Hatena', 'https://anchor.fm/s/7aad9de4/podcast/rss'],
   ['Bizchat.Fm', 'https://anchor.fm/s/667d3c6c/podcast/rss'],
   ['Cybozu Design Podcast', 'https://feed.podbean.com/cybozudesign/feed.xml'],
   ['devchat.Fm', 'https://anchor.fm/s/3b652dc8/podcast/rss'],
@@ -52,4 +53,5 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['ほぼ週刊 ゆるふわITニュース', 'https://anchor.fm/s/d369a630/podcast/rss'],
   ['もう一度読むSRE', 'https://anchor.fm/s/6233432c/podcast/rss'],
   ['論より動くもの.Fm', 'https://anchor.fm/s/927f758c/podcast/rss'],
+  ['今出川FM', 'https://anchor.fm/s/8de09a9c/podcast/rss'],
 ]);

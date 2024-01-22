@@ -5,11 +5,11 @@ module.exports = {
   // サイト設定
   siteUrl: `${siteUrl}`,
   siteUrlStem: siteUrlStem,
-  siteTitle: 'IT企業のポッドキャストRSS',
+  siteTitle: 'IT企業のポッドキャスト更新まとめ',
   siteDescription: 'IT企業のポッドキャストの更新をまとめたRSSフィードを配信しています',
 
   // フィード設定
-  feedTitle: 'IT企業のポッドキャストRSS',
+  feedTitle: 'IT企業のポッドキャスト更新まとめ',
   feedDescription: 'IT企業のポッドキャストの更新をまとめたRSSフィード',
   feedLanguage: 'ja',
   feedCopyright: 'it-trio/it-company-podcast-rss-feed',

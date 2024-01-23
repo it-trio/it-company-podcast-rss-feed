@@ -34,6 +34,7 @@ export class FeedGenerator {
     for (const feedItem of feedItems) {
       // ポッドキャストはブログと違って音声がないと意味がないので、音声がないものは入れない
       if (feedItem.enclosure?.url === undefined) {
+        logger.warn('[feed-item] フィードのurlがありません。', feedItem.enclosure?.url, feedItem.title);
         continue;
       }
       logger.info('[create-feed-item]', feedItem.isoDate, feedItem.title);

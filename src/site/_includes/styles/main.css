@@ -132,7 +132,12 @@ img {
     height: 37px;
     width: auto;
 }
-
+.ui-top-section .ui-top-section__engineer-designer {
+    margin-top: 0.5em;
+}
+.ui-top-section .ui-top-section__engineer-designer a {
+    text-decoration: underline;
+}
 /**
  * ナビゲーション
  */

@@ -15,12 +15,14 @@ module.exports = async () => {
   let feedItems = feedData.items;
 
   // 直近１ヶ月分
+  const oneMonthAgo = dayjs().subtract(31, 'day');
   feedItems = feedItems.filter((feedItem) => {
-    return dayjs(feedItem.date_published) > dayjs().subtract(1, 'month');
+    return dayjs(feedItem.date_published).isAfter(oneMonthAgo);
   });
 
   // データ調整
   for (const feedItem of feedItems) {
+    console.log(feedItem)
     feedItem.diffDateForHuman = dayjs().to(feedItem.date_published);
     feedItem.pubDateForHuman = dayjs(feedItem.date_published).tz().format('YYYY-MM-DD HH:mm:ss');
   }

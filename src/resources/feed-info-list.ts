@@ -54,4 +54,5 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['もう一度読むSRE', 'https://anchor.fm/s/6233432c/podcast/rss'],
   ['論より動くもの.Fm', 'https://anchor.fm/s/927f758c/podcast/rss'],
   ['今出川FM', 'https://anchor.fm/s/8de09a9c/podcast/rss'],
+  ['コードの現場から 泥臭い仕事と情熱', 'https://anchor.fm/s/e608f958/podcast/rss'],
 ]);

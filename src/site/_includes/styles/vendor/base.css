@@ -221,6 +221,18 @@ svg {
 
 .ui-layout-grid { display: grid; }
 
+.ui-content-by-it-trio {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+.ui-content-by-it-trio span img {
+    width: 180px;
+}
+
 /*--------------------------------------------------------------
 6.0 COMPONENT
 --------------------------------------------------------------*/
